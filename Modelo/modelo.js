@@ -8,13 +8,18 @@ let modeloDatos = new Schema(
     },
     email: {
       type: String,
+      required: true,
+      min: 4,
+      max: 12435,
     },
     phone: {
       type: Number,
     },
     password: {
-        type: String,
-      },
+      type: String,
+      required: true,
+      min: 4,
+    },
   },
   {
     collection: "Usuarios",
